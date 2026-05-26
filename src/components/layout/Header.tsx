@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import UserMenu from "./UserMenu";
 
 interface HeaderProps {
   onToggle: () => void;
@@ -111,7 +112,7 @@ export default function Header({ onToggle }: HeaderProps) {
           New Trade
         </button>
 
-        <div className="shell-avatar" style={{ cursor: "pointer" }}>TM</div>
+        <UserMenu />
       </div>
     </header>
   );

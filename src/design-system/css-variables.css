@@ -1,17 +1,17 @@
 /**
  * CSS Custom Properties — synced from Claude Design bundle
- * Source: https://api.anthropic.com/v1/design/h/h5M0KQmfmt5Vc1YRu_Pj7g
- * Last synced: 2026-05-26T08:09:18.258Z
+ * Source: https://api.anthropic.com/v1/design/h/EIegHJCNEEZsuzENeil4tg
+ * Last synced: 2026-05-26T08:20:06.127Z
  *
  * This file is auto-updated by `npm run sync-design`.
  * Do not edit by hand — changes will be overwritten on next sync.
  */
 :root {
-  --ant-primary: #fa8c16;
-  --ant-primary-hover: #ffa940;
-  --ant-primary-active: #d46b08;
-  --ant-primary-bg: #fff7e6;
-  --ant-primary-border: #ffd591;
+  --ant-primary: #1677ff;
+  --ant-primary-hover: #4096ff;
+  --ant-primary-active: #0958d9;
+  --ant-primary-bg: #e6f4ff;
+  --ant-primary-border: #91caff;
   --ant-success: #52c41a;
   --ant-success-bg: #f6ffed;
   --ant-success-border: #b7eb8f;
@@ -48,7 +48,7 @@
   --ant-sider: #001529;
   --ant-sider-item: rgba(255, 255, 255, 0.65);
   --ant-sider-item-active: #ffffff;
-  --ant-sider-bg-active: #fa8c16;
+  --ant-sider-bg-active: #1677ff;
   --ant-sider-divider: rgba(255, 255, 255, 0.08);
 
   --ant-radius: 8px;

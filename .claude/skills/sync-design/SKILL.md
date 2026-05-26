@@ -55,13 +55,7 @@ npm run build
 
 If build fails, report the error and stop.
 
-## 4. Commit
-
-```
-git add src/design-system/ && git commit -m "Sync design system from Claude Design bundle"
-```
-
-## 5. Report
+## 4. Report
 
 Print a short summary:
 - How many tokens changed / added / removed

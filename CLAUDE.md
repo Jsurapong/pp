@@ -21,6 +21,28 @@ App name: **TradeMaster** (Portfolio & Risk Management Platform)
 
 ## Architecture
 
+### Project structure (Bulletproof React)
+
+```
+src/
+├── app/                    ← Next.js routes only (thin pages)
+├── features/
+│   └── <feature>/
+│       ├── components/
+│       ├── services/
+│       ├── store/
+│       ├── types/
+│       └── index.ts        ← public API — import from here
+└── shared/
+    ├── components/         ← layout, providers, reusable UI
+    └── lib/                ← store, hooks, utilities
+```
+
+Import rules:
+- App routes import from `@/features/<name>` (public API) and `@/shared/*`
+- Features must not import from other features directly — use shared layer or public APIs
+- Shared modules may import feature public APIs (e.g. auth logout in Sider)
+
 ### Route layout
 
 ```
@@ -46,9 +68,9 @@ Three files — keep them in sync:
 
 When `npm run sync-design` reports changed token values, manually update `tokens.ts` and `antd-theme.ts` to match.
 
-### State management (`src/lib/`)
+### State management (`src/shared/lib/`)
 
-- `store.ts` — `makeStore()` with an empty reducer. Add slices here as the app grows.
+- `store.ts` — `makeStore()` with feature reducers. Add slices here as the app grows.
 - `hooks.ts` — typed `useAppDispatch` / `useAppSelector`. Use these instead of the raw Redux hooks.
 
 ### Skills (`.claude/skills/`)

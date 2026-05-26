@@ -1,4 +1,4 @@
-import type { User, LoginPayload, ApiErrorBody, AuthErrorCode } from '@/lib/types/auth';
+import type { User, LoginPayload, ApiErrorBody, AuthErrorCode } from '@/features/auth/types';
 
 function mapErrorCode(code: string): AuthErrorCode {
   switch (code) {

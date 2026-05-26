@@ -3,10 +3,9 @@
 import { useState } from 'react';
 import { App } from 'antd';
 import { useRouter } from 'next/navigation';
-import { useAppDispatch, useAppSelector } from '@/lib/hooks';
-import { setLoading, setUser, setError } from '@/lib/features/auth/authSlice';
-import { loginRequest } from '@/lib/features/auth/authApi';
-import type { AuthErrorCode } from '@/lib/types/auth';
+import { useAppDispatch, useAppSelector } from '@/shared/lib/hooks';
+import { setLoading, setUser, setError, loginRequest } from '@/features/auth';
+import type { AuthErrorCode } from '@/features/auth';
 
 const errorMessages: Record<AuthErrorCode, string> = {
   INVALID_CREDENTIALS: 'อีเมลหรือรหัสผ่านไม่ถูกต้อง',

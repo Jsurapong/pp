@@ -1,10 +1,9 @@
 'use client';
 
 import { useEffect } from 'react';
-import AppShell from '@/components/layout/AppShell';
-import { useAppDispatch } from '@/lib/hooks';
-import { setUser, clearAuth } from '@/lib/features/auth/authSlice';
-import { fetchCurrentUser } from '@/lib/features/auth/authApi';
+import AppShell from '@/shared/components/layout/AppShell';
+import { useAppDispatch } from '@/shared/lib/hooks';
+import { setUser, clearAuth, fetchCurrentUser } from '@/features/auth';
 
 function AuthBootstrapper() {
   const dispatch = useAppDispatch();

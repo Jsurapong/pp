@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import LoginForm from './_components/LoginForm';
+import { LoginForm } from '@/features/auth';
 
 export const metadata: Metadata = {
   title: 'เข้าสู่ระบบ — TradeMaster',

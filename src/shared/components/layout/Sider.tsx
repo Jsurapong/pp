@@ -3,9 +3,8 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Dropdown, type MenuProps } from "antd";
-import { useAppDispatch, useAppSelector } from "@/lib/hooks";
-import { clearAuth } from "@/lib/features/auth/authSlice";
-import { logoutRequest } from "@/lib/features/auth/authApi";
+import { useAppDispatch, useAppSelector } from "@/shared/lib/hooks";
+import { clearAuth, logoutRequest } from "@/features/auth";
 
 interface SiderProps {
   collapsed: boolean;

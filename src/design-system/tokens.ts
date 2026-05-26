@@ -8,11 +8,11 @@
 
 export const tokens = {
   color: {
-    primary:        "#1677ff",
-    primaryHover:   "#4096ff",
-    primaryActive:  "#0958d9",
-    primaryBg:      "#e6f4ff",
-    primaryBorder:  "#91caff",
+    primary:        "#fa8c16",
+    primaryHover:   "#ffa940",
+    primaryActive:  "#d46b08",
+    primaryBg:      "#fff7e6",
+    primaryBorder:  "#ffd591",
 
     success:        "#52c41a",
     successBg:      "#f6ffed",
@@ -65,7 +65,7 @@ export const tokens = {
     bg:        "#001529",
     item:      "rgba(255, 255, 255, 0.65)",
     itemActive:"#ffffff",
-    bgActive:  "#1677ff",
+    bgActive:  "#fa8c16",
     divider:   "rgba(255, 255, 255, 0.08)",
   },
 

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync-design": "node scripts/sync-design.mjs"
   },
   "dependencies": {
     "@ant-design/icons": "^6.2.3",
